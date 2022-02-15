@@ -22,8 +22,7 @@ class App extends Component {
     currentIndex: 1,
     activePrevious: false,
     activeNext: true,
-    questionnaire: payeshItemList,
-    user: ""
+    questionnaire: payeshItemList
   }
 
   componentDidMount() {

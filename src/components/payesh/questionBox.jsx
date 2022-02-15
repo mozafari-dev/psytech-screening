@@ -65,7 +65,7 @@ class QuestionBox extends Component {
     }
 
     render() {
-        const { question, onClickNext, onClickPrevious, activeNext, activePrevious } = this.props;
+        const { question, onClickNext, onClickPrevious, activeNext, activePrevious, user } = this.props;
         return (
             <>
                 <CacheProvider value={cacheRtl}>
