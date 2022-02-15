@@ -68,118 +68,119 @@ class QuestionBox extends Component {
         const { question, onClickNext, onClickPrevious, activeNext, activePrevious, user } = this.props;
         return (
             <>
-                <CacheProvider value={cacheRtl}>
-                    <ThemeProvider theme={theme}>
-                        <div
-                            className='container'
-                            dir="rtl"
-                            style={styles.bgContainer}
-                        >
-                            <Stack
-                                direction="column"
-                                justifyContent="center"
-                                alignItems="center"
-                                spacing={2}
+                {user &&
+                    <CacheProvider value={cacheRtl}>
+                        <ThemeProvider theme={theme}>
+                            <div
+                                className='container'
+                                dir="rtl"
+                                style={styles.bgContainer}
                             >
-                                {question.map((q, idx) => (
-                                    <React.Fragment key={idx}>
-                                        <Grid
-                                            container
-                                            spacing={0}
-                                            direction="column"
-                                            alignItems="center"
-                                            justifyContent="center"
-                                            style={styles.imageContainer}
-                                            sx={{
-                                                borderRadius: 5,
-                                                bgcolor: 'transparent',
-                                                alignItems: 'center',
-                                                padding: 20
-                                            }}>
-                                            <p className="lead persian-font" key={idx}>{q.title}</p>
-
-                                            <Box
+                                <Stack
+                                    direction="column"
+                                    justifyContent="center"
+                                    alignItems="center"
+                                    spacing={2}
+                                >
+                                    {question.map((q, idx) => (
+                                        <React.Fragment key={idx}>
+                                            <Grid
+                                                container
+                                                spacing={0}
+                                                direction="column"
+                                                alignItems="center"
+                                                justifyContent="center"
+                                                style={styles.imageContainer}
                                                 sx={{
                                                     borderRadius: 5,
-                                                    bgcolor: '#2A3143',
+                                                    bgcolor: 'transparent',
                                                     alignItems: 'center',
-                                                    '& .MuiSlider-markLabel': {
-                                                        color: '#C4C4C4',
-                                                        fontFamily: 'IranSans',
-                                                        fontSize: 18
-                                                    },
-                                                    '& .MuiSlider-thumb': {
-                                                        color: '#E55871'
-                                                    },
-                                                    '& .MuiSlider-track': {
-                                                        color: '#D96E81'
-                                                    },
-                                                    '& .MuiSlider-rail': {
-                                                        color: '#000000'
-                                                    },
-                                                    '& .MuiSlider-mark': {
-                                                        position: "absolute",
-                                                        background: "#5F636B"
-                                                    },
-
+                                                    padding: 20
                                                 }}>
-                                                <Slider
+                                                <p className="lead persian-font" key={idx}>{q.title}</p>
+
+                                                <Box
                                                     sx={{
-                                                        width: '400px',
-                                                        color: "#D96E81",
-                                                        margin: 10
-                                                    }}
-                                                    aria-label="Opinion"
-                                                    defaultValue={0}
-                                                    step={1}
-                                                    marks={palayeshMarks}
-                                                    min={0}
-                                                    max={4}
-                                                    onChange={this.handleSliderChange}
-                                                    key={idx}
-                                                />
-                                            </Box>
-                                            <nav aria-label="Page navigation persian-font">
-                                                <ul className="pagination justify-content-center">
-                                                    <li className="page-item" key='previous1'>
-                                                        <button
-                                                            key="previous"
-                                                            type="button"
-                                                            className={activePrevious ? "persian-font btn btn-outline-danger m-4" : "persian-font btn btn-outline-secondary m-4 disabled"}
-                                                            onClick={onClickPrevious}
-                                                            style={{
-                                                                backgroundColor: 'white',
-                                                                borderRadius: "25% 25%"
-                                                            }}
-                                                        >
-                                                            قبلی
-                                                        </button>
+                                                        borderRadius: 5,
+                                                        bgcolor: '#2A3143',
+                                                        alignItems: 'center',
+                                                        '& .MuiSlider-markLabel': {
+                                                            color: '#C4C4C4',
+                                                            fontFamily: 'IranSans',
+                                                            fontSize: 18
+                                                        },
+                                                        '& .MuiSlider-thumb': {
+                                                            color: '#E55871'
+                                                        },
+                                                        '& .MuiSlider-track': {
+                                                            color: '#D96E81'
+                                                        },
+                                                        '& .MuiSlider-rail': {
+                                                            color: '#000000'
+                                                        },
+                                                        '& .MuiSlider-mark': {
+                                                            position: "absolute",
+                                                            background: "#5F636B"
+                                                        },
 
-                                                    </li>
-                                                    <li className="page-item" key='next1'>
-                                                        <button
-                                                            key="next"
-                                                            type="button"
-                                                            className={activeNext ? "persian-font btn btn btn-outline-danger m-4" : "persian-font btn btn-outline-secondary m-4 disabled"}
-                                                            onClick={onClickNext}
-                                                            style={{
-                                                                backgroundColor: 'white',
-                                                                borderRadius: "25% 25%"
+                                                    }}>
+                                                    <Slider
+                                                        sx={{
+                                                            width: '400px',
+                                                            color: "#D96E81",
+                                                            margin: 10
+                                                        }}
+                                                        aria-label="Opinion"
+                                                        defaultValue={0}
+                                                        step={1}
+                                                        marks={palayeshMarks}
+                                                        min={0}
+                                                        max={4}
+                                                        onChange={this.handleSliderChange}
+                                                        key={idx}
+                                                    />
+                                                </Box>
+                                                <nav aria-label="Page navigation persian-font">
+                                                    <ul className="pagination justify-content-center">
+                                                        <li className="page-item" key='previous1'>
+                                                            <button
+                                                                key="previous"
+                                                                type="button"
+                                                                className={activePrevious ? "persian-font btn btn-outline-danger m-4" : "persian-font btn btn-outline-secondary m-4 disabled"}
+                                                                onClick={onClickPrevious}
+                                                                style={{
+                                                                    backgroundColor: 'white',
+                                                                    borderRadius: "25% 25%"
+                                                                }}
+                                                            >
+                                                                قبلی
+                                                            </button>
 
-                                                            }}
-                                                        >
-                                                            بعدی
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-                                        </Grid>
-                                    </React.Fragment>
-                                ))}
-                            </Stack>
-                        </div>
-                    </ThemeProvider>
-                </CacheProvider >
+                                                        </li>
+                                                        <li className="page-item" key='next1'>
+                                                            <button
+                                                                key="next"
+                                                                type="button"
+                                                                className={activeNext ? "persian-font btn btn btn-outline-danger m-4" : "persian-font btn btn-outline-secondary m-4 disabled"}
+                                                                onClick={onClickNext}
+                                                                style={{
+                                                                    backgroundColor: 'white',
+                                                                    borderRadius: "25% 25%"
+                                                                }}
+                                                            >
+                                                                بعدی
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </Grid>
+                                        </React.Fragment>
+                                    ))}
+                                </Stack>
+                            </div>
+                        </ThemeProvider>
+                    </CacheProvider >}
+                {!user && <h4>قبل از تست زنی شما باید در سایت ثبت نام کنید</h4>}
             </>
         );
     }
