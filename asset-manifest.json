@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/psytech-screening/static/css/main.e2d9b56c.css",
-    "main.js": "/psytech-screening/static/js/main.a27d17de.js",
+    "main.css": "/psytech-screening/static/css/main.74ba5637.css",
+    "main.js": "/psytech-screening/static/js/main.55d391f9.js",
     "static/js/787.cb0e373f.chunk.js": "/psytech-screening/static/js/787.cb0e373f.chunk.js",
     "static/media/test-bg.png": "/psytech-screening/static/media/test-bg.94a55431f0a1a93619af.png",
-    "static/media/header.png": "/psytech-screening/static/media/header.923508259985cf4f44d4.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/psytech-screening/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/psytech-screening/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/psytech-screening/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/IranSans.ttf": "/psytech-screening/static/media/IranSans.108fac8774fe726cac7e.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/psytech-screening/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/bg.svg": "/psytech-screening/static/media/bg.1c27a2555900ba6d9d99cd92e8c37270.svg",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/psytech-screening/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/IranSans.woff": "/psytech-screening/static/media/IranSans.d565f3f78e61a0a34e1b.woff",
     "static/media/logo.svg": "/psytech-screening/static/media/logo.6bb82145479d6e59e72944cb8c046c19.svg",
-    "static/media/instagram.svg": "/psytech-screening/static/media/instagram.4d969dd141d389ed7a2fe7584b56d681.svg",
     "index.html": "/psytech-screening/index.html",
-    "main.e2d9b56c.css.map": "/psytech-screening/static/css/main.e2d9b56c.css.map",
-    "main.a27d17de.js.map": "/psytech-screening/static/js/main.a27d17de.js.map",
+    "main.74ba5637.css.map": "/psytech-screening/static/css/main.74ba5637.css.map",
+    "main.55d391f9.js.map": "/psytech-screening/static/js/main.55d391f9.js.map",
     "787.cb0e373f.chunk.js.map": "/psytech-screening/static/js/787.cb0e373f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2d9b56c.css",
-    "static/js/main.a27d17de.js"
+    "static/css/main.74ba5637.css",
+    "static/js/main.55d391f9.js"
   ]
 }
